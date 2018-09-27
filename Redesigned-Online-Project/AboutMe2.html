@@ -12,6 +12,9 @@
 	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	   <style>
 	   
+			
+		
+	   
 		   .bg-1 
 		   {
 				background-color: #3371FF;
@@ -58,7 +61,11 @@
 		   
 		   }
 		   
-		   
+		   .describeMag 
+		   {
+				text-align: justify;
+				text-justify: inter-word;
+		   }
 
 		   
 		   
@@ -98,14 +105,10 @@
 	
 		<h2> Who Am I? </h2>
 		<img src ="images/me.jpg" class="img-responsive img-circle" style = "display:inline; padding-bottom: 25px;" alt = "my photo"/> 
-		<p> My name is Magan Hassan. I have an interest with computers & technology. Computers have always fascinated me since I was introduced to computer games consoles and online games. Therefore it has been my ambition to pursue a career in the computing industry. I'm love surfing the web so it's because of that I fall in love with web development & web design. I learnt a lot from studying the internet & the web in both college & university.</p>
-		<p> My hobbies/interest include watching anime, learning about Islam & playing games. </p>
+		<p class = "describeMag"> My name is Magan Hassan. I have an interest with computers & technology. Computers have always fascinated me since I was introduced to computer games consoles and online games. Therefore it has been my ambition to pursue a career in the computing industry. I'm love surfing the web so it's because of that I fall in love with web development & web design. I learnt a lot from studying the internet & the web in both college & university.</p>
+		<p class = "describeMag">My hobbies/interest include watching anime, learning about Islam & playing games. </p>
 		
 		<div class ="row">
-		
-			
-			
-
 			<div class = "col-lg-4  col-md-4  col-sm-4  col-xm-12">		
 				<canvas id = "MaganDrawC" width = "800" height = "500">		
 				</canvas> 
@@ -134,7 +137,7 @@
 			</div> 
 			<div class = "col-lg-4  col-md-4  col-sm-4  col-xm-12">
 				<h3> Email </h3> 
-				<p> You can contact me via y email- magan.gms@gmail.com </p>
+				<p> You can contact me via my email- magan.gms@gmail.com </p>
 				<img class = "img-responsive" src = "images/Gmail icon.jpg" height = "500" width = "720" alt = "Gmail image" /> 
 			
 			</div> 
@@ -184,48 +187,7 @@
 			img_ctx1.fillText ( "What's up",350,80);
 			img_ctx1.fillText ("Asalamu Alakum!",350,200); 
 			
-			/* 
-				when browser window resizes, I want to resize canvas so do these parts!!
 			
-			*/
-			
-			/*
-			// Get container size
-			var w = $(container).width();
-			
-			var h = $(container).height();
-			
-			//console.log(w);
-			
-			//console.log(h);
-			
-			// resize canvas with the container's size 
-			$(window).resize(RespondCanvas);
-			
-			function RespondCanvas()
-			{
-
-				var data = img_cnv1[0].toDataURL(); // Save canvas content as an image. 
-				
-				// Get canvas' size 
-				img_cnv1.width = $(container).width();
-				img_cnv1.height = $(container).height();
-				
-				// redraw canvas content
-				var imgRedraw = new Image(); 
-				imgreDraw.setAttribute('crossOrigin', 'anonymous');// dealing with CORS requests. 
-				imgRedraw.onload = function ()
-				{
-					img_ctx1.drawImage(imgRedraw,0,0,imgRedraw.width,imgRedraw.height); 
-			 
-				} 
-				
-				imgRedraw.src = data; 
-			
-			}
-			
-			RespondCanvas(); 
-			*/
 	
 		});	
 		
